@@ -11,10 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Build and push Docker image
-        run: |
-          docker build -t fastapi-app .
-
       - name: Deploy to server
         env:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
