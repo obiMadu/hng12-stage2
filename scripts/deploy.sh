@@ -2,7 +2,7 @@
 set -e
 
 # Pull latest code
-cd ~/hng12-stage2
+cd "$(dirname "$0")/.."
 git pull origin main
 
 # Build and restart Docker container
