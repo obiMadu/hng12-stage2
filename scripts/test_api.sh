@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Configuration
-BASE_URL="http://localhost"
-API_PREFIX="/api/v1"  # Matches core/config.py API_PREFIX
+BASE_URL="http://143.198.65.97"
+API_PREFIX="/api/v1" # Matches core/config.py API_PREFIX
 API_URL="${BASE_URL}${API_PREFIX}"
 
 # Colors for output
