@@ -74,10 +74,11 @@ pip install -r requirements.txt
 uvicorn main:app
 ```
 
-2. Access the API documentation:
-
-- Swagger UI: http://localhost:8000/docs
-- ReDoc: http://localhost:8000/redoc
+2. Access the application:
+- API (through Nginx): http://localhost:80
+- API documentation (through Nginx):
+  - Swagger UI: http://localhost/docs
+  - ReDoc: http://localhost/redoc
 
 ## API Endpoints
 
