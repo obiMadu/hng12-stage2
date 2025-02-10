@@ -1,6 +1,9 @@
 #!/bin/bash
 
-API_URL="http://localhost:8000/api/v1"
+# Configuration
+BASE_URL="http://localhost"
+API_PREFIX="/api/v1" # Matches core/config.py API_PREFIX
+API_URL="${BASE_URL}${API_PREFIX}"
 
 # Colors for output
 GREEN='\033[0;32m'
@@ -12,7 +15,7 @@ echo "=================================="
 
 # Test health check
 echo "Testing health check..."
-health_response=$(curl -s "${API_URL}/healthcheck")
+health_response=$(curl -s "${BASE_URL}/healthcheck")
 echo "Response: $health_response"
 if [[ $health_response == *"active"* ]]; then
   echo -e "${GREEN}OK${NC}"
