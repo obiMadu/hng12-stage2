@@ -1,6 +1,6 @@
 #!/bin/bash
 
-API_URL="http://143.198.65.97:8000/api/v1"
+API_URL="http://localhost:8000/api/v1"
 
 # Colors for output
 GREEN='\033[0;32m'
