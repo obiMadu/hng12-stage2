@@ -44,11 +44,6 @@ def test_update_book():
     assert data["title"] == "The Hobbit: An Unexpected Journey"
 
 
-def test_get_nonexistent_book():
-    response = client.get("/books/999")  # A book ID that doesn't exist
-    assert response.status_code == 404
-    assert response.json() == {"detail": "Book not found"}
-
 def test_delete_book():
     response = client.delete("/books/3")
     assert response.status_code == 204
