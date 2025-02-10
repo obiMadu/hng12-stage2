@@ -15,7 +15,7 @@ echo "=================================="
 
 # Test health check
 echo "Testing health check..."
-health_response=$(curl -s "${API_URL}/healthcheck")
+health_response=$(curl -s "${BASE_URL}/healthcheck")
 echo "Response: $health_response"
 if [[ $health_response == *"active"* ]]; then
   echo -e "${GREEN}OK${NC}"
